@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAX actividades escolares - formulario</title>
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Imagen de logo al principio de la página -->
+  <img src="iax_logo.png" alt="Logo IAX" class="logo">
+
+  <!-- Título principal de la página -->
+  <h1>IAX actividades escolares - formulario</h1>
+    
+  <!-- Inicio del formulario de actividad -->
+  <fieldset>
+      <legend>Alta/Edición de la actividad:</legend>
+
+      <!-- Campo para el email del profesor responsable -->
+      <div class="input-group">
+      <label for="email_profesor">Email profesor responsable:</label>
+      <input type="email" id="email_profesor" name="email_profesor" required>
+      </div>
+
+      <!-- Campo para el nombre del profesor responsable -->
+      <div class="input-group">
+      <label for="nombre_profesor">Nombre profesor responsable:</label>
+      <input type="text" id="nombre_profesor" name="nombre_profesor" required>
+      </div>
+     
+      <!-- Campo para los nombres de los profesores acompañantes -->
+      <div class="input-group">
+      <label for="nombres_acompanantes">Nombres profesores acompañantes:</label>
+      <input type="text" id="nombres_acompanantes" name="nombres_acompanantes">
+      </div>
+      
+      <!-- Campo para el título o nombre de la actividad -->
+      <div class="input-group">
+      <label for="titulo_actividad">Título o denominación de la actividad:</label>
+      <input type="text" id="titulo_actividad" name="titulo_actividad" required>
+      </div>
+
+      <!-- Campo de texto para describir la actividad -->
+      <div class="input-group">
+      <label for="descripcion_actividad">Descripción de la actividad:</label>
+      <textarea id="descripcion_actividad" name="descripcion_actividad" rows="5" cols="70"></textarea>
+      </div>
+
+      <!-- Selección del departamento responsable -->
+      <div class="input-group">
+      <label for="departamento">Departamento:</label>
+      <select id="departamento" name="departamento">
+        <option value="">-- Seleccione --</option>
+      </select>
+      </div>
+
+      <!-- Opción para indicar si la actividad está valorada -->
+      <div class="input-group">
+      <label for="valorado">Valorado:</label>
+      <input type="checkbox" id="valorado" name="valorado">
+      </div>
+      
+      <!-- Sección para la fecha y hora de inicio de la actividad -->
+      <fieldset>
+        <legend>Fecha y hora de inicio de la actividad o de salida del IES:</legend>
+        
+        <div class="input-group">
+        <label for="fecha_inicio">Fecha:</label>
+        <input type="date" id="fecha_inicio" name="fecha_inicio">
+        </div>
+        
+        <div class="input-group">
+        <label for="hora_inicio">Hora:</label>
+        <input type="time" id="hora_inicio" name="hora_inicio" >
+        </div>
+      </fieldset>
+
+      <!-- Sección para la fecha y hora de finalización de la actividad -->
+      <fieldset>
+        <legend>Fecha y hora de fin de la actividad o de llegada al IES:</legend>
+        
+        <div class="input-group">
+        <label for="fecha_fin">Fecha:</label>
+        <input type="date" id="fecha_fin" name="fecha_fin">
+        </div>
+
+        <div class="input-group">
+        <label for="hora_fin">Hora:</label>
+        <input type="time" id="hora_fin" name="hora_fin">
+        </div>
+      </fieldset>
+      <br>
+
+      <!-- Campo para el lugar de realización de la actividad -->
+      <div class="input-group">
+      <label for="lugar_actividad">Lugar de realización de la actividad:</label>
+      <textarea id="lugar_actividad" name="lugar_actividad" rows="3" cols="70"></textarea>
+      </div>
+
+      <!-- Selección múltiple de los grupos de alumnos implicados -->
+      <div class="input-group">
+      <label for="grupos">Grupos de alumnos implicados (selecciona uno o varios):</label>
+      <select id="grupos" name="grupos" size="4" multiple>
+        <option value="DAM1">DAM1</option>
+        <option value="DAM2">DAM2</option>
+        <option value="DAM1d">DAM1d</option>
+        <option value="DAM2d">DAM2d</option>
+      </select>
+      </div>
+
+      <!-- Pregunta sobre la necesidad de autobús con opciones de radio -->
+      <div class="input-group">
+      <label for="autobus">¿Se necesita autobús?</label>
+      <input type="radio" id="autobus_si" name="autobus" value="si">
+      <label for="autobus_si">Sí</label>
+      <input type="radio" id="autobus_no" name="autobus" value="no">
+      <label for="autobus_no">No</label>
+      </div>
+
+      <!-- Campo para especificar el coste de la actividad para el alumno -->
+      <div class="input-group">
+      <label for="coste_actividad">Coste de la actividad (€) para el alumno:</label>
+      <input type="number" id="coste_actividad" name="coste_actividad" min="0" step="0.01">
+      </div>
+
+      <!-- Botón para enviar los filtros -->
+      <button>Enviar</button>
+      <br>
+
+  </fieldset>
+</body>
+</html>

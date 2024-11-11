@@ -1,0 +1,110 @@
+/* Fondo de la página en un tono azul claro */
+body {
+    background-color: #e6f2ff; /* Color de fondo azul claro */
+    font-family: Arial, sans-serif; /* Fuente moderna y legible */
+    color: #1a1a1a; /* Color del texto en tono gris oscuro */
+    width: 880px; /* Ancho fijo del contenedor */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+/* Estilo para la imagen del logo */
+.logo {
+    display: block; /* Centrar la imagen */
+    margin: 0 auto 20px; /* Centrado y margen inferior */
+    max-width: 100%; /* Asegurar que no sea más ancha que el contenedor */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+}
+
+/* Estilo para los títulos principales */
+h1 {
+    text-align: center; /* Centrar el título */
+    color: #005b99; /* Tono azul oscuro para el título */
+    font-size: 2rem; /* Tamaño grande para el título */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* Estilo para los formularios y secciones dentro de fieldset */
+fieldset {
+    border: 1px solid #b3d1ff; /* Borde azul claro */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Margen inferior */
+    background-color: #ffffff; /* Fondo blanco para los fieldsets */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 8px rgba(0, 91, 153, 0.1); /* Sombra suave */
+}
+
+/* Estilo para los textos dentro de legend */
+legend {
+    color: #005b99; /* Tono azul oscuro para el título */
+    font-size: 1rem; /* Tamaño grande para el título */
+}
+
+/* Estilo para las etiquetas de los campos del formulario */
+label {
+    font-weight: bold; /* Negrita en las etiquetas */
+    color: #005b99; /* Azul oscuro */
+    margin-right: 10px; /* Espacio a la derecha de las etiquetas */
+    display: block; /* Colocar cada etiqueta en una línea separada */
+    margin-top: 10px; /* Espacio superior para separación */
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"], input[type="email"], input[type="date"], input[type="time"], select, textarea {
+    width: 98%; /* Los campos ocupan el 100% del ancho disponible */
+    padding: 10px; /* Espaciado interno en los campos */
+    margin: 5px 0 5px 0; /* Espaciado superior e inferior */
+    border: 1px solid #b3d1ff; /* Borde azul claro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f0f8ff; /* Fondo azul muy claro */
+    color: #1a1a1a; /* Texto gris oscuro */
+    font-size: 1rem; /* Tamaño de fuente legible */
+}
+
+input[type="number"]{
+    margin: 10px 0 10px 0; /* Espaciado superior e inferior */
+}
+
+#departamento{
+    width: 100%;
+}
+
+/* Estilo para los botones de selección múltiple */
+select[multiple] {
+    height: auto; /* Altura ajustable según el contenido */
+    padding: 10px;
+}
+
+/* Estilo para los checkboxes y radios */
+input[type="checkbox"], input[type="radio"] {
+    accent-color: #005b99; /* Color azul oscuro para checkboxes y radios */
+    margin-right: 10px; /* Espacio a la derecha */
+}
+
+/* Estilo para las áreas de texto largas */
+textarea {
+    width: 98%; /* Ocupa el 100% del ancho */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #b3d1ff; /* Borde azul claro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f0f8ff; /* Fondo azul muy claro */
+}
+
+#grupos{
+    width: 100%;
+}
+/* Estilo para los botones */
+button {
+    background-color: #005b99; /* Fondo azul oscuro */
+    color: #ffffff; /* Texto en blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente legible */
+    cursor: pointer; /* Cambiar el cursor a pointer */
+    box-shadow: 0 4px 6px rgba(0, 91, 153, 0.2); /* Sombra para efecto de botón */
+    margin: 35px 0 10px 0;
+}
+
+button:hover {
+    background-color: #0073e6; /* Color azul más claro al pasar el mouse */
+}
