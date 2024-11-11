@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración de la codificación y visualización para móviles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAX actividades escolares - formulario</title>
+    
+    <!-- Estilos internos: define el ancho y centrado de la página -->
+    <style>
+      body {
+        width: 880px;      /* Ancho fijo de 880px para centrar contenido */
+        margin: 0 auto;    /* Centra horizontalmente */
+      }
+    </style>
+</head>
+<body>
+
+  <!-- Título principal de la página -->
+  <h1>IAX actividades escolares - formulario</h1>
+    
+  <!-- Formulario de alta y edición de actividades -->
+  <fieldset>
+      <legend>Alta/Edición de la actividad:</legend> <!-- Sección principal de la actividad -->
+      
+      <!-- Campo para el correo electrónico del profesor responsable -->
+      Email profesor responsable:
+      <input type="text" size="20">
+      
+      <!-- Campo para el nombre del profesor responsable -->
+      Nombre profesor responsable:
+      <input type="text" size="20">
+      <br><br>
+     
+      <!-- Campo para nombres de profesores acompañantes -->
+      Nombres profesores acompañantes:
+      <input type="text" size="20">
+      <br><br>
+      
+      <!-- Campo para el título de la actividad -->
+      Título o denominación de la actividad:
+      <input type="text" size="20">
+      <br><br>
+
+      <!-- Área de texto para la descripción de la actividad -->
+      Descripción de la actividad:
+      <br>
+      <textarea rows="5" cols="70"></textarea>
+      <br><br>
+
+      <!-- Menú de selección para el departamento correspondiente -->
+      Departamento:
+      <select>
+      <option>-- Seleccione --</option>
+      </select>
+      <br><br>
+
+      <!-- Opción de marcar si la actividad está valorada -->
+      Valorado
+      <input type="checkbox">
+      <br><br>
+      
+      <!-- Sección de fecha y hora de inicio -->
+      <fieldset>
+        <legend>Fecha y hora de inicio de la actividad o de salida del IES:</legend>
+        Fecha <input type="date"> <!-- Campo para seleccionar la fecha de inicio -->
+        Hora <input type="time"> <!-- Campo para seleccionar la hora de inicio -->
+      </fieldset>
+
+      <!-- Sección de fecha y hora de fin -->
+      <fieldset>
+        <legend>Fecha y hora de fin de la actividad o de llegada al IES:</legend>
+        Fecha <input type="date"> <!-- Campo para seleccionar la fecha de fin -->
+        Hora <input type="time"> <!-- Campo para seleccionar la hora de fin -->
+      </fieldset>
+      <br>
+
+      <!-- Área de texto para especificar el lugar de la actividad -->
+      Lugar de realización de la actividad (indicar lugar, municipio, provincia... 
+      Lo más completo posible). Si es en el centro simplemente se indica IAX.
+      <br>
+      <textarea rows="3" cols="70"></textarea>
+      <br><br>
+
+      <!-- Lista de selección múltiple para grupos de alumnos implicados -->
+      Grupos de alumnos implicados (selecciona uno o varios)
+      <br>
+      <select size="4" multiple>
+      <option>DAM1</option>
+      <option>DAM2</option>
+      <option>DAM1d</option>
+      <option>DAM2d</option>
+      </select>
+      <br><br>
+
+      <!-- Opción de selección sobre si se necesita autobús -->
+      ¿Se necesita autobús?
+      <br><br>
+      <input type="radio" name="autobus" value="si"> Sí
+      <br>
+      <input type="radio" name="autobus" value="no"> No
+      <br><br>
+
+      <!-- Campo para el coste de la actividad -->
+      Coste de la actividad (€) para el alumno, incluyendo los gastos de autobús si es necesario.
+      <input type="text" size="20">
+</body>
+</html>
