@@ -1,0 +1,133 @@
+/* Estilos generales */
+body {
+    background-color: #f5f3e7; /* Fondo beige claro */
+    color: #5a4b3c; /* Color de texto marrón */
+    font-family: Arial, sans-serif; /* Fuente general */
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina rellenos */
+    overflow-y: scroll; /* Añade barra de desplazamiento vertical */
+}
+
+/* Contenedor del logo */
+.logo-container {
+    display: flex; /* Flexbox para centrar el logo */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin: 20px 0; /* Márgenes arriba y abajo */
+}
+
+/* Título principal */
+h1 {
+    text-align: center; /* Alinea el título al centro */
+    color: #8c6e58; /* Color marrón claro para el título */
+    font-size: 2em; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Título secundario */
+h2 {
+    text-align: center; /* Alinea el título al centro */
+    color: #8c6e58; /* Color marrón claro para el título */
+    font-size: 1em; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+
+fieldset {
+    border: 2px solid #bfa58d; /* Borde marrón claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    max-width: 850px; /* Ancho máximo */
+    margin: 0 auto 20px; /* Centrado horizontal y margen inferior */
+    color: #8c6e58; /* Color del texto dentro del fieldset */
+    font-weight: bold; /* Texto en negrita */
+    background-image: url('fondo_beige.png'); /* Imagen de fondo */
+    background-size: cover; /* Cubre todo el área */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-position: center; /* Centra la imagen */
+}
+
+legend {
+    color: #8c6e58; /* Color de texto en el legend */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.filter-container {
+    display: flex; /* Utiliza flexbox para los filtros */
+    flex-wrap: wrap; /* Permite que los filtros se ajusten en varias líneas */
+    gap: 15px; /* Espacio entre los filtros */
+    align-items: center; /* Alineación vertical */
+}
+
+.filter-container .input-group {
+    display: flex; /* Flexbox para los grupos de entrada */
+    align-items: center; /* Alinea los elementos verticalmente */
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    
+}
+
+.filter-container label {
+    width: 300px; /* Ancho fijo para las etiquetas */
+    font-weight: bold; /* Etiquetas en negrita */
+    color: #8c6e58; /* Color de las etiquetas */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+input[type="text"]{
+    width: 300px; /* Ancho fijo para las etiquetas */
+}
+
+input[type="text"],
+input[type="date"] {
+    border: 1px solid #bfa58d; /* Borde marrón claro */
+    border-radius: 3px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    background-color: #fcfcfc; /* Fondo blanco */
+    color: #5a4b3c; /* Color de texto en los campos */
+}
+
+input[type="submit"] {
+    background-color: #8c6e58; /* Fondo marrón claro */
+    color: #fff; /* Texto blanco */
+    cursor: pointer; /* Muestra el cursor en forma de mano */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 3px; /* Bordes redondeados */
+}
+
+input[type="submit"]:hover {
+    background-color: #70543e; /* Fondo marrón oscuro al pasar el mouse */
+}
+
+table {
+    max-width: 880px; /* Ancho fijo de la tabla */
+    margin: 0 auto 40px; /* Centra la tabla horizontalmente */
+    border-collapse: collapse; /* Colapsa los bordes */
+    font-size: 0.95em; /* Tamaño de fuente más pequeño */
+}
+
+th, td {
+    padding: 5px; /* Espaciado en celdas */
+    text-align: center; /* Alineación del texto en el centro */
+    border: 1px solid #bfa58d; /* Borde marrón claro */
+}
+
+th {
+    background-color: #8c6e58; /* Fondo marrón claro para los encabezados */
+    color: #ffffff; /* Texto blanco */
+}
+
+td {
+    background-color: #ffffff; /* Fondo blanco para las celdas */
+}
+
+button {
+    background-color: #8c6e58; /* Fondo marrón claro */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 3px; /* Bordes redondeados */
+    cursor: pointer; /* Muestra el cursor como mano */
+}
+
+button:hover {
+    background-color: #70543e; /* Fondo marrón oscuro al pasar el mouse */
+}
