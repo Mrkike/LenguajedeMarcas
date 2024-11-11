@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">  <!-- Definición de la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Configuración para la visualización en dispositivos móviles -->
+    <link rel="stylesheet" href="style.css">  <!-- Vinculación del archivo CSS externo -->
+    <title>IAX actividades escolares</title>  <!-- Título de la página -->
+    
+    <style>
+      table {
+          width: 100%;  <!-- La tabla ocupa todo el ancho disponible -->
+      }
+      th, td {
+          padding: 10px;  <!-- Espaciado dentro de las celdas -->
+          text-align: center;  <!-- Centrado del contenido dentro de las celdas -->
+      }
+      th {
+          white-space: normal;  <!-- Permite que el texto en las cabeceras se divida en varias líneas si es necesario -->
+      }
+    </style>
+</head>
+<body>
+  <div class="logo-container">    
+    <img src="iax_logo.png" alt="Logo de IAX" style="width: auto; height: auto;">  <!-- Imagen del logo con dimensiones automáticas -->
+  </div> 
+  <h1>IAX actividades escolares</h1>  <!-- Título principal de la página -->
+    
+  <fieldset>
+    <legend>Filtros:</legend>  <!-- Título del grupo de filtros -->
+    <div class="filter-container">
+      <div class="input-group">
+        <label for="profesor">Nombre del profesor responsable:</label>
+        <input type="text" id="profesor">  <!-- Campo de texto para el nombre del profesor -->
+      </div>
+
+      <div class="input-group">
+        <label for="actividad">Título de la actividad:</label>
+        <input type="text" id="actividad">  <!-- Campo de texto para el título de la actividad -->
+      </div>
+
+      <div class="input-group">
+        <label>Pendiente de validar</label>
+        <input type="checkbox" id="pendiente">  <!-- Casilla de verificación para actividades pendientes de validar -->
+      </div>
+
+      <div class="input-group">
+        <label for="fecha-desde">Fecha desde:</label>
+        <input type="date" id="fecha-desde">  <!-- Selector de fecha para el inicio del rango -->
+      </div>
+
+      <div class="input-group">
+        <label for="fecha-hasta">Fecha hasta:</label>
+        <input type="date" id="fecha-hasta">  <!-- Selector de fecha para el fin del rango -->
+      </div>
+
+      <input type="submit" value="Enviar">  <!-- Botón de envío del formulario -->
+    </div>
+  </fieldset>
+
+  <h2>Listado de actividades propuestas</h2>  <!-- Título del listado de actividades -->
+  <table style="width: 100%;">  <!-- Tabla con el 100% de ancho -->
+    <thead>
+      <tr>
+        <th>Pdte. Validar</th>  <!-- Encabezado de la columna para validar -->
+        <th>Nombre profes. resp.</th>  <!-- Encabezado de la columna para el nombre del profesor responsable -->
+        <th>Titulo o denominación de la actividad</th>  <!-- Encabezado para el título de la actividad -->
+        <th>Departamento</th>  <!-- Encabezado para el departamento -->
+        <th>Fecha/hora de inicio/salida</th>  <!-- Encabezado para la fecha de inicio -->
+        <th>Fecha/hora de fin/llegada</th>  <!-- Encabezado para la fecha de fin -->
+        <th>Lugar de realización</th>  <!-- Encabezado para el lugar de la actividad -->
+        <th>Grupos implicados</th>  <!-- Encabezado para los grupos implicados -->
+        <th>Acción</th>  <!-- Encabezado para la columna de acción -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="checkbox" name="validar1"></td>  <!-- Casilla para marcar si está pendiente de validar -->
+        <td>Rodrigo Martínez Rodríguez</td>  <!-- Nombre del profesor responsable -->
+        <td>Visita a CPD Universidad de Murcia</td>  <!-- Título de la actividad -->
+        <td>Informática</td>  <!-- Departamento responsable -->
+        <td>10/11/2022 09:00</td>  <!-- Fecha y hora de inicio -->
+        <td>10/11/2022 14:00</td>  <!-- Fecha y hora de fin -->
+        <td>Campus de Espinardo</td>  <!-- Lugar de la actividad -->
+        <td>DAM1, DAM2, DAM1d, DAM2d</td>  <!-- Grupos implicados -->
+        <td><button onclick="alert('Acción para Rodrigo Martínez')">Editar</button></td>  <!-- Botón para editar la actividad -->
+      </tr>
+
+      <tr>
+        <td><input type="checkbox" name="validar2"></td>
+        <td>María Marquez</td>
+        <td>Visita a empresa NTTData</td>
+        <td>Informática</td>
+        <td>22/11/2022 10:00</td>
+        <td>22/11/2022 14:30</td>
+        <td>Juan Carlo I, edif. Torre de cristal</td>
+        <td>DAM2, DAM2d</td>
+        <td><button onclick="alert('Acción para María Marquez')">Editar</button></td>
+      </tr>
+
+      <tr>
+        <td><input type="checkbox" name="validar3"></td>
+        <td>Benito Sánchez</td>
+        <td>Visita a empresa Capgemini</td>
+        <td>Informática</td>
+        <td>25/11/2022 11:00</td>
+        <td>25/11/2022 13:00</td>
+        <td>Torre B, C. Nelva, 1, 30006 Murcia</td>
+        <td>DAM1, DAM2, DAM1d, DAM2d</td>
+        <td><button onclick="alert('Acción para Benito Sánchez')">Editar</button></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
