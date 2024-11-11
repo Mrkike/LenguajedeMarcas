@@ -8,42 +8,117 @@ body {
     overflow-y: scroll; /* Añade barra de desplazamiento vertical */
 }
 
-/* Contenedor del logo */
-.logo-container {
-    display: flex; /* Flexbox para centrar el logo */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    margin: 20px 0; /* Márgenes arriba y abajo */
+/* Encabezado */
+header {
+    background-color: #aa9688; /* Fondo marrón claro */
+    text-align: center; /* Centra todo el contenido dentro del encabezado */
+    padding: 20px 0; /* Espaciado superior e inferior */
 }
 
-/* Título principal */
-h1 {
-    text-align: center; /* Alinea el título al centro */
-    color: #8c6e58; /* Color marrón claro para el título */
-    font-size: 2em; /* Tamaño de fuente */
-    margin-bottom: 20px; /* Margen inferior */
+header img.logo {
+    max-width: 150px; /* Tamaño máximo del logo */
+    margin: 0 auto; /* Centra el logo */
+    display: block; /* Asegura que el logo sea tratado como bloque para centrarlo */
 }
 
-/* Título secundario */
-h2 {
-    text-align: center; /* Alinea el título al centro */
-    color: #8c6e58; /* Color marrón claro para el título */
-    font-size: 1em; /* Tamaño de fuente */
-    margin-bottom: 20px; /* Margen inferior */
+header h1 {
+    color: #fff; /* Texto blanco */
+    font-size: 2.5em; /* Tamaño de fuente */
+    margin: 10px 0; /* Espaciado superior e inferior */
 }
 
+header p {
+    color: #fff; /* Texto blanco */
+    font-size: 1.2em; /* Tamaño de fuente */
+}
 
+/* Menú de navegación */
+nav {
+    background-color: #70543e; /* Fondo marrón oscuro */
+    text-align: center; /* Centra el contenido dentro del menú de navegación */
+    padding: 10px 0; /* Espaciado superior e inferior */
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos de las listas */
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina rellenos */
+}
+
+nav ul li {
+    display: inline-block; /* Muestra los elementos de la lista en una línea */
+    margin: 0 15px; /* Espaciado horizontal entre los elementos */
+}
+
+nav ul li a {
+    color: #fff; /* Texto blanco */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 1.1em; /* Tamaño de fuente */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Subraya los enlaces al pasar el ratón */
+}
+
+/* Contenido principal */
+section {
+    padding: 20px; /* Espaciado alrededor del contenido principal */
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Iframe */
+iframe {
+    width: 100%; /* El iframe ocupa el 100% del ancho */
+    height: 600px; /* Altura fija para el iframe */
+    border: none; /* Elimina el borde del iframe */
+}
+
+.logo-container{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+/* Estilos de tabla */
+table {
+    width: 100%; /* La tabla ocupa el 100% del ancho disponible */
+    max-width: 850px; /* Ancho máximo para la tabla */
+    margin: 20px auto; /* Centra la tabla y le da margen vertical */
+    border-collapse: collapse; /* Colapsa los bordes de las celdas */
+    font-size: 0.95em; /* Tamaño de la fuente */
+}
+
+th, td {
+    padding: 10px; /* Espaciado en las celdas */
+    text-align: center; /* Alinea el contenido al centro de las celdas */
+    border: 1px solid #bfa58d; /* Borde marrón claro */
+}
+
+th {
+    background-color: #8c6e58; /* Fondo marrón claro para los encabezados */
+    color: #ffffff; /* Texto blanco en los encabezados */
+}
+
+td {
+    background-color: #ffffff; /* Fondo blanco para las celdas */
+}
+
+/* Estilos para formularios y otros elementos */
 fieldset {
     border: 2px solid #bfa58d; /* Borde marrón claro */
     border-radius: 5px; /* Bordes redondeados */
     padding: 15px; /* Espaciado interno */
     max-width: 850px; /* Ancho máximo */
-    margin: 0 auto 20px; /* Centrado horizontal y margen inferior */
+    margin: 20px auto; /* Centra el fieldset y le da márgenes verticales */
     color: #8c6e58; /* Color del texto dentro del fieldset */
     font-weight: bold; /* Texto en negrita */
-    background-image: url('fondo_beige.png'); /* Imagen de fondo */
-    background-size: cover; /* Cubre todo el área */
-    background-repeat: no-repeat; /* No repite la imagen */
-    background-position: center; /* Centra la imagen */
+    background-color: #fcfcfc; /* Fondo blanco para visibilidad */
 }
 
 legend {
@@ -51,83 +126,102 @@ legend {
     font-weight: bold; /* Texto en negrita */
 }
 
-.filter-container {
-    display: flex; /* Utiliza flexbox para los filtros */
-    flex-wrap: wrap; /* Permite que los filtros se ajusten en varias líneas */
-    gap: 15px; /* Espacio entre los filtros */
-    align-items: center; /* Alineación vertical */
-}
-
-.filter-container .input-group {
-    display: flex; /* Flexbox para los grupos de entrada */
-    align-items: center; /* Alinea los elementos verticalmente */
+/* Grupos de entrada */
+.input-group {
+    display: flex; /* Usa flexbox para el grupo de entradas */
+    flex-direction: column; /* Coloca la etiqueta encima del campo */
+    gap: 5px; /* Espacio entre la etiqueta y el campo */
+    margin-bottom: 15px; /* Espaciado debajo de cada grupo */
     width: 100%; /* Ocupa el 100% del ancho disponible */
-    
 }
 
-.filter-container label {
-    width: 300px; /* Ancho fijo para las etiquetas */
+/* Etiquetas */
+label {
     font-weight: bold; /* Etiquetas en negrita */
-    color: #8c6e58; /* Color de las etiquetas */
-    text-align: left; /* Alinea el texto a la izquierda */
+    color: #8c6e58; /* Color marrón claro */
 }
 
-input[type="text"]{
-    width: 300px; /* Ancho fijo para las etiquetas */
-}
-
+/* Campos de entrada */
 input[type="text"],
-input[type="date"] {
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+textarea,
+select {
     border: 1px solid #bfa58d; /* Borde marrón claro */
     border-radius: 3px; /* Bordes redondeados */
-    padding: 5px; /* Espaciado interno */
+    padding: 8px; /* Espaciado interno */
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    max-width: 400px; /* Ancho máximo para los campos */
+    color: #5a4b3c; /* Color del texto en los campos */
     background-color: #fcfcfc; /* Fondo blanco */
-    color: #5a4b3c; /* Color de texto en los campos */
+    font-size: 1em; /* Tamaño de fuente */
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px; /* Espaciado entre el checkbox/radio y la etiqueta */
+}
+
+/* Botones */
+button,
 input[type="submit"] {
     background-color: #8c6e58; /* Fondo marrón claro */
     color: #fff; /* Texto blanco */
-    cursor: pointer; /* Muestra el cursor en forma de mano */
-    padding: 5px 10px; /* Espaciado interno */
-    border-radius: 3px; /* Bordes redondeados */
+    border: none; /* Sin borde */
+    padding: 8px 15px; /* Espaciado interno */
+    font-size: 1em; /* Tamaño de la fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Aparece como puntero al pasar el ratón */
+    transition: background-color 0.3s ease; /* Efecto de transición para el color de fondo */
 }
 
+button:hover,
 input[type="submit"]:hover {
-    background-color: #70543e; /* Fondo marrón oscuro al pasar el mouse */
+    background-color: #70543e; /* Fondo marrón oscuro al pasar el ratón */
 }
 
-table {
-    max-width: 880px; /* Ancho fijo de la tabla */
-    margin: 0 auto 40px; /* Centra la tabla horizontalmente */
-    border-collapse: collapse; /* Colapsa los bordes */
-    font-size: 0.95em; /* Tamaño de fuente más pequeño */
-}
-
-th, td {
-    padding: 5px; /* Espaciado en celdas */
-    text-align: center; /* Alineación del texto en el centro */
-    border: 1px solid #bfa58d; /* Borde marrón claro */
-}
-
-th {
-    background-color: #8c6e58; /* Fondo marrón claro para los encabezados */
-    color: #ffffff; /* Texto blanco */
-}
-
-td {
-    background-color: #ffffff; /* Fondo blanco para las celdas */
-}
-
-button {
+/* Pie de página */
+footer {
     background-color: #8c6e58; /* Fondo marrón claro */
     color: #fff; /* Texto blanco */
-    border: none; /* Sin borde */
-    padding: 5px 10px; /* Espaciado interno */
-    border-radius: 3px; /* Bordes redondeados */
-    cursor: pointer; /* Muestra el cursor como mano */
+    text-align: center; /* Centra el contenido del pie de página */
+    padding: 10px; /* Espaciado interno */
 }
 
-button:hover {
-    background-color: #70543e; /* Fondo marrón oscuro al pasar el mouse */
+footer p {
+    margin: 0; /* Elimina márgenes en el pie de página */
+}
+
+/* Ajustes de layout para formateo responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Disminuye el tamaño del título en pantallas pequeñas */
+    }
+
+    header p {
+        font-size: 1em; /* Disminuye el tamaño del texto en el encabezado en pantallas pequeñas */
+    }
+
+    nav ul li {
+        display: block; /* Muestra los elementos de la lista en bloques para pantallas pequeñas */
+        margin: 5px 0; /* Ajusta el margen entre los elementos */
+    }
+
+    nav ul li a {
+        font-size: 1.2em; /* Aumenta el tamaño del texto de los enlaces en pantallas pequeñas */
+    }
+
+    fieldset {
+        padding: 10px; /* Ajusta el espaciado interno del fieldset en pantallas pequeñas */
+        max-width: 100%; /* Hace que el fieldset ocupe todo el ancho en pantallas pequeñas */
+    }
+
+    .input-group label,
+    .input-group input,
+    .input-group select,
+    .input-group textarea {
+        width: 100%; /* Hace que los campos de entrada ocupen el 100% del ancho en pantallas pequeñas */
+    }
 }
