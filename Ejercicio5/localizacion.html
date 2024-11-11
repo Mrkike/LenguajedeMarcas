@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Definir la codificación de caracteres a UTF-8 para soportar caracteres especiales -->
     <meta charset="UTF-8">
+    
+    <!-- Asegurar que la página sea responsive y se adapte a diferentes tamaños de pantalla -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página que aparece en la pestaña del navegador -->
     <title>Localización</title>
+    
+    <!-- Enlace al archivo CSS externo para los estilos -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Título principal de la página que indica el contenido -->
     <h2>Localización del Instituto</h2>
 
-    <!-- Insertar el mapa de Google Maps -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.230050705569!2d-1.1284289236878347!3d37.99509419943744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63821890fddf55%3A0xabf09d4fc425f806!2sIES%20Alfonso%20X%20El%20Sabio!5e0!3m2!1ses!2ses!4v1731359811917!5m2!1ses!2ses" 
-    width="90%" 
-    height="450" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+    <!-- Insertar el mapa de Google Maps utilizando un iframe -->
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.230050705569!2d-1.1284289236878347!3d37.99509419943744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63821890fddf55%3A0xabf09d4fc425f806!2sIES%20Alfonso%20X%20El%20Sabio!5e0!3m2!1ses!2ses!4v1731359811917!5m2!1ses!2ses" 
+        width="90%" <!-- Ancho del mapa, ajustado al 90% del contenedor padre -->
+        height="450" <!-- Altura del mapa en píxeles -->
+        style="border:0;" <!-- Elimina el borde del iframe -->
+        allowfullscreen="" <!-- Permite que el mapa se vea en pantalla completa -->
+        loading="lazy" <!-- Carga el iframe de manera diferida para mejorar el rendimiento -->
+        referrerpolicy="no-referrer-when-downgrade"> <!-- Política de referencia para mayor seguridad -->
+    </iframe>
+
 </body>
 </html>
