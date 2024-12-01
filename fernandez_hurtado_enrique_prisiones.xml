@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE prisiones SYSTEM "fernandez_hurtado_enrique_prisiones.dtd">
+<prisiones>
+    <prision>
+        <codigo>ESP001</codigo>
+        <nombre>Prisión Central de Madrid</nombre>
+        <director>
+            <nombre_completo>Juan López Pérez</nombre_completo>
+            <nombramiento>2019-03-15</nombramiento>
+        </director>
+        <direccion>Calle Mayor 123, Madrid</direccion>
+        <inauguracion>1985-06-20</inauguracion>
+        <capacidad>1500</capacidad>
+        <funcionarios>
+            <funcionario>
+                <puesto>carcelero</puesto>
+                <incorporacion>2015-08-01</incorporacion>
+                <nombre_completo>Pedro Gómez García</nombre_completo>
+            </funcionario>
+            <funcionario>
+                <puesto>administrativo</puesto>
+                <incorporacion>2017-05-10</incorporacion>
+                <nombre_completo>María Fernández López</nombre_completo>
+            </funcionario>
+        </funcionarios>
+        <reclusos>
+            <recluso>
+                <numero>1001</numero>
+                <nombre_completo>Carlos Martínez Sánchez</nombre_completo>
+                <celda>101</celda>
+                <ingreso>2022-01-12</ingreso>
+                <condena>5 años</condena>
+                <peligrosidad>no peligroso</peligrosidad>
+            </recluso>
+            <recluso>
+                <numero>1002</numero>
+                <nombre_completo>José García Rodríguez</nombre_completo>
+                <celda>102</celda>
+                <ingreso>2023-05-18</ingreso>
+                <condena>10 años</condena>
+                <peligrosidad>peligroso</peligrosidad>
+            </recluso>
+        </reclusos>
+        <celdas>
+            <celda_info>
+                <numero>101</numero>
+                <pabellon>A</pabellon>
+                <plazas>2</plazas>
+            </celda_info>
+            <celda_info>
+                <numero>102</numero>
+                <pabellon>A</pabellon>
+                <plazas>2</plazas>
+            </celda_info>
+        </celdas>
+    </prision>
+    <prision>
+        <codigo>ESP002</codigo>
+        <nombre>Prisión Norte de Bilbao</nombre>
+        <director>
+            <nombre_completo>Ana Ruiz Martínez</nombre_completo>
+            <nombramiento>2021-09-01</nombramiento>
+        </director>
+        <direccion>Avenida de la Libertad 45, Bilbao</direccion>
+        <inauguracion>1990-11-15</inauguracion>
+        <capacidad>1200</capacidad>
+        <funcionarios>
+            <funcionario>
+                <puesto>personal de servicios</puesto>
+                <incorporacion>2020-02-20</incorporacion>
+                <nombre_completo>Laura García Ruiz</nombre_completo>
+            </funcionario>
+            <funcionario>
+                <puesto>carcelero</puesto>
+                <incorporacion>2018-06-10</incorporacion>
+                <nombre_completo>Diego Fernández Moreno</nombre_completo>
+            </funcionario>
+        </funcionarios>
+        <reclusos>
+            <recluso>
+                <numero>2001</numero>
+                <nombre_completo>Francisco Sánchez Gómez</nombre_completo>
+                <celda>201</celda>
+                <ingreso>2021-10-01</ingreso>
+                <condena>8 años</condena>
+                <peligrosidad>posiblemente peligroso</peligrosidad>
+            </recluso>
+            <recluso>
+                <numero>2002</numero>
+                <nombre_completo>Lucía Martínez Pérez</nombre_completo>
+                <celda>202</celda>
+                <ingreso>2022-02-15</ingreso>
+                <condena>3 años</condena>
+                <peligrosidad>no peligroso</peligrosidad>
+            </recluso>
+        </reclusos>
+        <celdas>
+            <celda_info>
+                <numero>201</numero>
+                <pabellon>B</pabellon>
+                <plazas>3</plazas>
+            </celda_info>
+            <celda_info>
+                <numero>202</numero>
+                <pabellon>B</pabellon>
+                <plazas>3</plazas>
+            </celda_info>
+        </celdas>
+    </prision>
+</prisiones>
