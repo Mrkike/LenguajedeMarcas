@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Agenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="fernandez_hurtado_enrique_agenda.xsd">
+    <Ficha>
+        <Nombre>Juan</Nombre>
+        <Apellido1>Pérez</Apellido1>
+        <Apellido2>Gómez</Apellido2>
+        <TelefonosNacionales>
+            <Telefono>612345678</Telefono>
+            <Telefono>700123456</Telefono>
+        </TelefonosNacionales>
+        <Emails>
+            <Email>juan.perez@example.com</Email>
+        </Emails>
+        <Categoria>particular</Categoria>
+        <Zona>Infante</Zona>
+    </Ficha>
+    <Ficha>
+        <Nombre>Empresa X</Nombre>
+        <Apellido1></Apellido1>
+        <TelefonosNacionales>
+            <Telefono>900123456</Telefono>
+        </TelefonosNacionales>
+        <DireccionesPostales>
+            <Direccion>
+                <Calle>Calle Mayor, 10</Calle>
+                <CodigoPostal>30001</CodigoPostal>
+                <Ciudad>Murcia</Ciudad>
+                <Pais>España</Pais>
+            </Direccion>
+        </DireccionesPostales>
+        <Categoria>empresa</Categoria>
+    </Ficha>
+    <Ficha>
+        <Nombre>María</Nombre>
+        <Apellido1>López</Apellido1>
+        <TelefonosInternacionales>
+            <Telefono>+44 520712345</Telefono>
+        </TelefonosInternacionales>
+        <Emails>
+            <Email>maria.lopez@example.org</Email>
+        </Emails>
+        <Categoria>comercial</Categoria>
+        <Zona>San Antón</Zona>
+    </Ficha>
+    <Ficha>
+        <Nombre>Comercial Z</Nombre>
+        <Apellido1></Apellido1>
+        <TelefonosNacionales>
+            <Telefono>681234567</Telefono>
+        </TelefonosNacionales>
+        <Emails>
+            <Email>comercial.z@example.com</Email>
+        </Emails>
+        <Categoria>comercial</Categoria>
+    </Ficha>
+</Agenda>

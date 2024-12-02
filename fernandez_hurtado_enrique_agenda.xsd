@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Definición de los tipos básicos -->
+    <xs:simpleType name="TelefonoNacional">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[6789]\d{8}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TelefonoInternacional">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\+\d{2} \d{9}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Email">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^@]+\.[^@]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="CodigoPostal">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="10000"/>
+            <xs:maxInclusive value="99999"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Categoria">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="empresa"/>
+            <xs:enumeration value="particular"/>
+            <xs:enumeration value="comercial"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Zona">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="La flota"/>
+            <xs:enumeration value="Infante"/>
+            <xs:enumeration value="San Antón"/>
+            <xs:enumeration value="Ronda Norte"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Dirección postal -->
+    <xs:complexType name="DireccionPostal">
+        <xs:sequence>
+            <xs:element name="Calle" type="xs:string"/>
+            <xs:element name="Piso" type="xs:string" minOccurs="0"/>
+            <xs:element name="Letra" type="xs:string" minOccurs="0"/>
+            <xs:element name="CodigoPostal" type="CodigoPostal"/>
+            <xs:element name="Ciudad" type="xs:string"/>
+            <xs:element name="Pais" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Ficha -->
+    <xs:complexType name="Ficha">
+        <xs:sequence>
+            <xs:element name="Nombre" type="xs:string"/>
+            <xs:element name="Apellido1" type="xs:string"/>
+            <xs:element name="Apellido2" type="xs:string" minOccurs="0"/>
+            <xs:element name="TelefonosNacionales" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Telefono" type="TelefonoNacional" maxOccurs="5"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="TelefonosInternacionales" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Telefono" type="TelefonoInternacional" maxOccurs="2"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Emails" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Email" type="Email" maxOccurs="2"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="DireccionesPostales" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Direccion" type="DireccionPostal" maxOccurs="3"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Categoria" type="Categoria"/>
+            <xs:element name="Zona" type="Zona" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Root Element -->
+    <xs:element name="Agenda">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Ficha" type="Ficha" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
