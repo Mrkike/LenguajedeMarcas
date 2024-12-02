@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tabla_periodica>
+<tabla_periodica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="fernandez_hurtado_enrique_tabla_periodica.xsd">
     <atomo estado="gaseoso">
         <nombre>Hidrógeno</nombre>
         <simbolo>H</simbolo>

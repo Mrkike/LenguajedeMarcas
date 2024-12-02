@@ -3,7 +3,7 @@
     <xs:element name="tabla_periodica">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="atomo" maxOccurs="unbounded">
+                <xs:element name="atomo" minOccurs="1" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="nombre" type="xs:string"/>
