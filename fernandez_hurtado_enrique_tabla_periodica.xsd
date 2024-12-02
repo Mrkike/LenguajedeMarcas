@@ -20,7 +20,7 @@
                                 <xs:complexType>
                                     <xs:simpleContent>
                                         <xs:extension base="xs:decimal">
-                                            <xs:attribute name="unidades" type="xs:string" default="centígrados">
+                                            <xs:attribute name="unidades" default="centígrados">
                                                 <xs:simpleType>
                                                     <xs:restriction base="xs:string">
                                                         <xs:enumeration value="centígrados"/>
