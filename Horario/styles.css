@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 800px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.horario {
+    border: 3px solid #000;
+}
+
+.vacia {
+    background: none;
+    border: none;
+}
+
+.recreo {
+    background-color: #cccccc;
+    font-weight: bold;
+}
+
+.LMSGI {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.SI {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.IP {
+    background-color: #FFEB3B;
+    color: #000;
+}
+
+.ED {
+    background-color: #FF5722;
+    color: #fff;
+}
+
+.AE {
+    background-color: #E91E63;
+    color: #fff;
+}
+
+.PRG {
+    background-color: #FF9800;
+    color: #fff;
+}
+
+.BD {
+    background-color: #FFC107;
+    color: #000;
+}
+
+.IPE-I {
+    background-color: #9E9E9E;
+    color: #fff;
+}
