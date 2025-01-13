@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="NombreType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="5"/>
+            <xs:maxLength value="30"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="CIFType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{8}-[A-Z]"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TelefonoType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{9}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TipoArticuloType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Libro"/>
+            <xs:enumeration value="DVD"/>
+            <xs:enumeration value="Varios"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="Facturas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Factura" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Cliente">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Nombre" type="NombreType"/>
+                                        <xs:element name="CIF" type="CIFType"/>
+                                        <xs:element name="Telefono" type="TelefonoType"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Emisor">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Nombre" type="NombreType"/>
+                                        <xs:element name="CIF" type="CIFType"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="DetalleFactura" maxOccurs="15">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Descripcion" type="NombreType"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="CodigoArticulo" type="xs:string" use="required"/>
+                                    <xs:attribute name="Tipo" type="TipoArticuloType" use="required"/>
+                                    <xs:attribute name="Cantidad" type="xs:positiveInteger" use="required"/>
+                                    <xs:attribute name="Importe" type="xs:decimal" use="required"/>
+                                    <xs:attribute name="PVP" type="xs:decimal" use="required"/>
+                                    <xs:attribute name="Oferta" type="xs:boolean" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="NumeroFactura" type="xs:positiveInteger" use="required"/>
+                        <xs:attribute name="Fecha" type="xs:date" use="required"/>
+                        <xs:attribute name="Moneda" type="xs:string" use="optional" default="€"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

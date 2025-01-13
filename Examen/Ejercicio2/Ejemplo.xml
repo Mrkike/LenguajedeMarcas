@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE personas SYSTEM "personas.dtd">
+<personas>
+    <persona carnet="B2548">
+        <nombre>Antonio Martínez</nombre>
+        <sexo>Hombre</sexo>
+        <emails>
+            <email>antonio@gmail.com</email>
+        </emails>
+        <parentescos>
+            <parentesco tipo="Padre" referencia="B1111"/>
+            <parentesco tipo="Padre" referencia="C2222"/>
+        </parentescos>
+    </persona>
+    <persona carnet="B1111">
+        <nombre>Juana Martínez</nombre>
+        <sexo>Mujer</sexo>
+        <emails>
+            <email>juana@gmail.com</email>
+        </emails>
+        <parentescos>
+            <parentesco tipo="Hermano" referencia="C2222"/>
+        </parentescos>
+    </persona>
+    <persona carnet="C2222">
+        <nombre>Luis Martínez</nombre>
+        <sexo>Hombre</sexo>
+        <emails>
+            <email>luis@gmail.com</email>
+        </emails>
+        <parentescos>
+            <parentesco tipo="Hermano" referencia="B1111"/>
+            <parentesco tipo="Padre" referencia="Z5555"/>
+        </parentescos>
+    </persona>
+    <persona carnet="Z5555">
+        <nombre>Mariano Martínez</nombre>
+        <sexo>Hombre</sexo>
+        <emails>
+            <email>mar@yahoo.des</email>
+            <email>mariano@gmail.com</email>
+        </emails>
+    </persona>
+</personas>

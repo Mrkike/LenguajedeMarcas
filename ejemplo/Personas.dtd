@@ -1,0 +1,14 @@
+<!ELEMENT personas (persona+)>
+<!ELEMENT persona (nombre, carnet, sexo, emails, parentesco?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT carnet (#PCDATA)>
+<!ELEMENT sexo (#PCDATA)>
+<!ELEMENT emails (email+)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT parentesco (padre?, hermano*)>
+<!ELEMENT padre (#PCDATA)>
+<!ELEMENT hermano (#PCDATA)>
+
+<!ATTLIST persona
+  carnet ID #REQUIRED
+  sexo (Hombre | Mujer) #REQUIRED>

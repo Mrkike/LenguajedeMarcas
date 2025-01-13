@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Facturas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="factura_esquema.xsd">
+    <Factura NumeroFactura="1" Fecha="2024-12-10" Moneda="€">
+        <Cliente>
+            <Nombre>Juan Perez</Nombre>
+            <CIF>12345678-A</CIF>
+            <Telefono>600123456</Telefono>
+        </Cliente>
+        <Emisor>
+            <Nombre>Empresa XYZ</Nombre>
+            <CIF>87654321-B</CIF>
+        </Emisor>
+        <DetalleFactura CodigoArticulo="A001" Tipo="Libro" Cantidad="2" Importe="30.00" PVP="15.00" Oferta="true">
+            <Descripcion>Libro de ficción</Descripcion>
+        </DetalleFactura>
+    </Factura>
+    <Factura NumeroFactura="2" Fecha="2024-12-11">
+        <Cliente>
+            <Nombre>Maria Lopez</Nombre>
+            <CIF>23456789-C</CIF>
+            <Telefono>700987654</Telefono>
+        </Cliente>
+        <Emisor>
+            <Nombre>Editorial ABC</Nombre>
+            <CIF>54321678-D</CIF>
+        </Emisor>
+        <DetalleFactura CodigoArticulo="B002" Tipo="DVD" Cantidad="1" Importe="20.00" PVP="20.00">
+            <Descripcion>Pelicula en Blu-Ray</Descripcion>
+        </DetalleFactura>
+    </Factura>
+</Facturas>

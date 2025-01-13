@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE personas SYSTEM "personas.dtd">
+<personas>
+    <persona carnet="B2548" sexo="Hombre">
+        <nombre>Antonio Martínez</nombre>
+        <emails>
+            <email>antonio@gmail.com</email>
+        </emails>
+        <parentesco>
+            <padre>B1111</padre>
+            <padre>C2222</padre>
+        </parentesco>
+    </persona>
+   

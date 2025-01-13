@@ -1,0 +1,13 @@
+<!ELEMENT personas (persona+)>
+<!ELEMENT persona (nombre, sexo, emails, parentescos?)>
+<!ATTLIST persona
+    carnet ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT sexo (#PCDATA)>
+<!ELEMENT emails (email+)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT parentescos (parentesco*)>
+<!ELEMENT parentesco (#PCDATA)>
+<!ATTLIST parentesco
+    tipo (Padre | Hermano) #REQUIRED
+    referencia IDREF #REQUIRED>
