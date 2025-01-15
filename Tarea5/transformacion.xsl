@@ -11,7 +11,7 @@
       </head>
       <body>
         <h1>Lista de Artistas</h1>
-        <table border="1">
+        <table>
           <tr>
             <th>Código</th>
             <th>Nombre</th>
@@ -20,7 +20,7 @@
             <th>País</th>
             <th>Página web</th>
           </tr>
-          <xsl:for-each select="artistas/artista[nacimiento > 1500]">
+          <xsl:for-each select="artistas/artista [nacimiento > 1500]">
             <xsl:sort select="nacimiento" order="ascending" />
             <tr>
               <td><xsl:value-of select="@cod" /></td>
@@ -42,13 +42,13 @@
         
         <!-- Counting and displaying additional information -->
         <p>Número total de artistas nacidos después de 1500: 
-          <xsl:value-of select="count(artistas/artista[nacimiento &gt; 1500])" />
+          <xsl:value-of select="count(artistas/artista[nacimiento > 1500])" />
         </p>
         <p>Número de artistas nacidos en España: 
-          <xsl:value-of select="count(artistas/artista[nacimiento &gt; 1500 and pais='España'])" />
+          <xsl:value-of select="count(artistas/artista[pais='España'])" />
         </p>
         <p>Número de artistas nacidos en el siglo XVI: 
-          <xsl:value-of select="count(artistas/artista[nacimiento &gt;= 1501 and nacimiento &lt; 1600])" />
+          <xsl:value-of select="count(artistas/artista[nacimiento > 1501 and nacimiento < 1600])" />
         </p>
       </body>
     </html>
