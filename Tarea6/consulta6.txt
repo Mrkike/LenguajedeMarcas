@@ -1,0 +1,3 @@
+<modelo>LaserJet 2410</modelo>
+<modelo>LaserJet 2420</modelo>
+<modelo>LaserJet 2430</modelo>

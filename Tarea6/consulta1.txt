@@ -1,0 +1,4 @@
+<artista><nombreCompleto>Diego Velázquez</nombreCompleto><pais>España</pais></artista>
+<artista><nombreCompleto>Michelangelo Caravaggio</nombreCompleto><pais>Italia</pais></artista>
+<artista><nombreCompleto>Herrada de Landsberg</nombreCompleto><pais>Alsacia</pais></artista>
+<artista><nombreCompleto>Francisco de Goya</nombreCompleto><pais>España</pais></artista>

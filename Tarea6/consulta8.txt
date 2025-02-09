@@ -1,0 +1,2 @@
+<impresora><marca>HP</marca><modelo>LaserJet 2420</modelo></impresora>
+<impresora><marca>HP</marca><modelo>LaserJet 2430</modelo></impresora>
