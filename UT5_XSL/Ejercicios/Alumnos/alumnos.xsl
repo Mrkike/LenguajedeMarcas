@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+    
     <xsl:template match="/">
         <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
             <head>
@@ -65,10 +66,20 @@
                     <xsl:value-of select="apellidos" />
                     <xsl:text> -  </xsl:text>
                     <xsl:value-of select="@dni" />
-                    
                     <br />
                 </xsl:for-each>
-               
+                
+                <h3>8. Promedio de edad de los alumnos de Murcia menores de 18 anos y el promedio de todos los alumnos menores de 18 anos de todas las localidades:</h3>
+                <xsl:text>- La edad promedio de los alumnos de Murcia menores de 18 años es </xsl:text>
+                <xsl:value-of select="sum(//alumno[edad &lt; 18 and localidad='Murcia']/edad) div count(//alumno[edad &lt; 18 and localidad='Murcia'])" />
+                <xsl:text> años.</xsl:text>
+                <br />
+                <xsl:text>- El promedio de todos los alumnos menores de 18 anos de todas las localidades es </xsl:text>
+                <xsl:value-of select="sum(//alumno[edad &lt; 18]/edad) div count(//alumno[edad &lt; 18]/edad)" />
+                <xsl:text> años.</xsl:text>
+                <br />
+                    
+                    
             </body>
         </html>
     </xsl:template>

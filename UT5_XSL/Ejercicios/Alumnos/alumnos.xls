@@ -46,8 +46,8 @@
     <alumno dni="77008899B">
         <nombre>Nerea</nombre>
         <apellidos>Delgado Romero</apellidos>
-        <localidad>Lugo</localidad>
-        <edad>25</edad>
+        <localidad>Murcia</localidad>
+        <edad>15</edad>
     </alumno>
     <alumno dni="88009900C">
         <nombre>Manuel</nombre>
@@ -136,32 +136,32 @@
     <alumno dni="23456789C">
         <nombre>Javier</nombre>
         <apellidos>López García</apellidos>
-        <localidad>Sevilla</localidad>
-        <edad>21</edad>
+        <localidad>Murcia</localidad>
+        <edad>11</edad>
     </alumno>
     <alumno dni="98765432D">
         <nombre>María</nombre>
         <apellidos>Fernández López</apellidos>
-        <localidad>Valencia</localidad>
-        <edad>23</edad>
+        <localidad>Murcia</localidad>
+        <edad>11</edad>
     </alumno>
     <alumno dni="34567890E">
         <nombre>David</nombre>
         <apellidos>Sánchez González</apellidos>
         <localidad>Bilbao</localidad>
-        <edad>25</edad>
+        <edad>9</edad>
     </alumno>
     <alumno dni="45678901F">
         <nombre>Ana</nombre>
         <apellidos>Ramírez Torres</apellidos>
         <localidad>Málaga</localidad>
-        <edad>20</edad>
+        <edad>10</edad>
     </alumno>
     <alumno dni="56789012G">
         <nombre>José</nombre>
         <apellidos>Hernández Vázquez</apellidos>
-        <localidad>Granada</localidad>
-        <edad>22</edad>
+        <localidad>Murcia</localidad>
+        <edad>10</edad>
     </alumno>
     <alumno dni="67890123H">
         <nombre>Isabel</nombre>
@@ -173,13 +173,13 @@
         <nombre>Ricardo</nombre>
         <apellidos>Moreno Serrano</apellidos>
         <localidad>Alicante</localidad>
-        <edad>21</edad>
+        <edad>9</edad>
     </alumno>
     <alumno dni="89012345J">
         <nombre>Sofía</nombre>
         <apellidos>Cruz Ortega</apellidos>
         <localidad>Valladolid</localidad>
-        <edad>23</edad>
+        <edad>7</edad>
     </alumno>
     <alumno dni="99001122U">
         <nombre>Eduardo</nombre>
@@ -191,54 +191,54 @@
         <nombre>Andrea</nombre>
         <apellidos>Flores Pardo</apellidos>
         <localidad>Almería</localidad>
-        <edad>22</edad>
+        <edad>15</edad>
     </alumno>
     <alumno dni="22003344W">
         <nombre>Samuel</nombre>
         <apellidos>Blanco Soto</apellidos>
         <localidad>Huelva</localidad>
-        <edad>23</edad>
+        <edad>9</edad>
     </alumno>
     <alumno dni="33004455X">
         <nombre>Cristina</nombre>
         <apellidos>Ramos Díez</apellidos>
         <localidad>Badajoz</localidad>
-        <edad>21</edad>
+        <edad>14</edad>
     </alumno>
     <alumno dni="44005566Y">
         <nombre>Victor</nombre>
         <apellidos>Sáez Molina</apellidos>
         <localidad>Castellón</localidad>
-        <edad>24</edad>
+        <edad>14</edad>
     </alumno>
     <alumno dni="55006677Z">
         <nombre>Eva</nombre>
         <apellidos>Gallardo Pastor</apellidos>
         <localidad>Gijón</localidad>
-        <edad>26</edad>
+        <edad>16</edad>
     </alumno>
     <alumno dni="66778899K">
         <nombre>Patricio</nombre>
         <apellidos>Valverde Figueroa</apellidos>
         <localidad>Cáceres</localidad>
-        <edad>22</edad>
+        <edad>11</edad>
     </alumno>
     <alumno dni="77889900L">
         <nombre>Martina</nombre>
         <apellidos>Cordero Roldán</apellidos>
         <localidad>Guadalajara</localidad>
-        <edad>23</edad>
+        <edad>17</edad>
     </alumno>
     <alumno dni="88990011M">
         <nombre>Antonio</nombre>
         <apellidos>Hidalgo Cano</apellidos>
         <localidad>Teruel</localidad>
-        <edad>24</edad>
+        <edad>16</edad>
     </alumno>
     <alumno dni="99001122N">
         <nombre>Olga</nombre>
         <apellidos>Campos Esteban</apellidos>
         <localidad>Huesca</localidad>
-        <edad>25</edad>
+        <edad>10</edad>
     </alumno>
 </alumnos>
