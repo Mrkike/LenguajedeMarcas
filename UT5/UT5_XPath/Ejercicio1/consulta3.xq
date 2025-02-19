@@ -1,3 +1,3 @@
-(: 2.- Seleccionar la página web del instituto :)
-for $web in doc("instituto.xml")/ies/web
-return $web/text()
+(: 3.- Seleccionar el nombre de los ciclos formativos: :)
+for $nombre in doc("instituto.xml")/ies/ciclos/ciclo/nombre
+return $nombre/text() 
