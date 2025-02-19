@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>libreria.xsl</title>
+        <style>
+                    .border-caja {
+                    display: inline-block;
+                    border: 2px solid black;
+                    padding: 10px;
+                    margin: 10px;
+                    }
+                    th {
+                    background-color: blue;
+                    color: white;
+                    }
+                    .rojo { background-color: red; color: white; }
+                    .verde { background-color: green; color: white; }
+                    .azul { background-color: blue; color: white; }
+                    .titulo { background-color: #ABC; }
+                    .autor { background-color: #CBA; }
+                    .autor-king { background-color: #456; color: white; }
+                    
+                </style>
+    </head>
+    <body>
+        <h1>UT6 - Practica04</h1>
+        <p>Dado el documento XML &ldquo;libreria.xml&rdquo;, escriba las hojas de estilo XSLT que devuelvan la respuesta deseada</p>
+        <h3>1. Un archivo HTML que muestre una tabla con la informaci&oacute;n de los libros.</h3>
+        <div class="border-caja">
+            <h2>Mi biblioteca Personal</h2>
+            <table border="1">
+                <tr color="blue">
+                    <th>ISBN</th><th>T&iacute;tulo</th><th>Autor</th><th>Precio</th>
+                </tr>
+                <tr>
+                    <td>978-84-9999-703-8</td><td>&iexcl;Indignaos!</td><td>Stephane Hessel</td><td>5.00</td>
+                </tr>
+                <tr>
+                    <td>998-84-9849-783-8</td><td>Ejercicios de LMSGI</td><td>Enrique Mu&ntilde;oz</td><td>6.00</td>
+                </tr>
+                <tr>
+                    <td>978-99-9849-703-8</td><td>La tienda</td><td>King</td><td>7.00</td>
+                </tr>
+                <tr>
+                    <td>978-99-9849-703-8</td><td>It</td><td>King</td><td>10.50</td>
+                </tr>
+                <tr>
+                    <td>978-84-9849-703-8</td><td>Ejercicios complementarios de logica digital</td><td>Alberto Sanchez </td><td>12.00</td>
+                </tr>
+                <tr>
+                    <td>978-84-9849-998-8</td><td>Principios de seguridad informatica para usuarios</td><td>Carlos Garre</td><td>12.50</td>
+                </tr>
+                <tr>
+                    <td>978-15-8450-380-4</td><td>Physics-based animation</td><td>Kenny Erleben</td><td>50.06</td>
+                </tr>
+            </table>
+        </div>
+        <h3>2. Mostrar los libros de King ordenados por precio</h3>
+        <div class="border-caja">
+            <table border="1">
+                <tr color="blue">
+                    <th>ISBN</th><th>T&iacute;tulo</th><th>Autor</th><th>Precio</th>
+                </tr>
+                <tr>
+                    <td>978-99-9849-703-8</td><td>La tienda</td><td>King</td><td>7.00</td>
+                </tr>
+                <tr>
+                    <td>978-99-9849-703-8</td><td>It</td><td>King</td><td>10.50</td>
+                </tr>
+            </table>
+        </div>
+        <h3>3 Mostrar los libros que no son de King ordenados por precio:</h3>
+        <div class="border-caja">
+            <table border="1">
+                <tr color="blue">
+                    <th>ISBN</th><th>T&iacute;tulo</th><th>Autor</th><th>Precio</th>
+                </tr>
+                <tr>
+                    <td>978-84-9999-703-8</td><td>&iexcl;Indignaos!</td><td>Stephane Hessel</td><td>5.00</td>
+                </tr>
+                <tr>
+                    <td>998-84-9849-783-8</td><td>Ejercicios de LMSGI</td><td>Enrique Mu&ntilde;oz</td><td>6.00</td>
+                </tr>
+                <tr>
+                    <td>978-84-9849-703-8</td><td>Ejercicios complementarios de logica digital</td><td>Alberto Sanchez </td><td>12.00</td>
+                </tr>
+                <tr>
+                    <td>978-84-9849-998-8</td><td>Principios de seguridad informatica para usuarios</td><td>Carlos Garre</td><td>12.50</td>
+                </tr>
+                <tr>
+                    <td>978-15-8450-380-4</td><td>Physics-based animation</td><td>Kenny Erleben</td><td>50.06</td>
+                </tr>
+            </table>
+        </div>
+        <h3>4. Mostrar los libros que valen m&aacute;s de 10&euro; ordenados por precio</h3>
+        <div class="border-caja">
+            <table border="1">
+                <tr color="blue">
+                    <th>ISBN</th><th>T&iacute;tulo</th><th>Autor</th><th>Precio</th>
+                </tr>
+                <tr>
+                    <td>978-99-9849-703-8</td><td>It</td><td>King</td><td>10.50</td>
+                </tr>
+                <tr>
+                    <td>978-84-9849-703-8</td><td>Ejercicios complementarios de logica digital</td><td>Alberto Sanchez </td><td>12.00</td>
+                </tr>
+                <tr>
+                    <td>978-84-9849-998-8</td><td>Principios de seguridad informatica para usuarios</td><td>Carlos Garre</td><td>12.50</td>
+                </tr>
+                <tr>
+                    <td>978-15-8450-380-4</td><td>Physics-based animation</td><td>Kenny Erleben</td><td>50.06</td>
+                </tr>
+            </table>
+        </div>
+        <h3>5. Mostrar los libros ordenados por &ldquo;editor&rdquo;, mostrando el precio de los libros que valen
+                    menos de 10&euro; con fondo rojo, el de los que valen m&aacute;s de 30&euro; con fondo verde, y el resto
+                    con fondo azul.</h3>
+        <div class="border-caja">
+            <table border="1">
+                <tr color="blue">
+                    <th>ISBN</th><th>T&iacute;tulo</th><th>Autor</th><th>Precio</th>
+                </tr>
+                <tr>
+                    <td>978-84-9999-703-8</td><td>&iexcl;Indignaos!</td><td>Stephane Hessel</td><td class="rojo">5.00</td>
+                </tr>
+                <tr>
+                    <td>978-15-8450-380-4</td><td>Physics-based animation</td><td>Kenny Erleben</td><td class="verde">50.06</td>
+                </tr>
+                <tr>
+                    <td>998-84-9849-783-8</td><td>Ejercicios de LMSGI</td><td>Enrique Mu&ntilde;oz</td><td class="rojo">6.00</td>
+                </tr>
+                <tr>
+                    <td>978-84-9849-703-8</td><td>Ejercicios complementarios de logica digital</td><td>Alberto Sanchez </td><td class="azul">12.00</td>
+                </tr>
+                <tr>
+                    <td>978-84-9849-998-8</td><td>Principios de seguridad informatica para usuarios</td><td>Carlos Garre</td><td class="azul">12.50</td>
+                </tr>
+                <tr>
+                    <td>978-99-9849-703-8</td><td>It</td><td>King</td><td class="azul">10.50</td>
+                </tr>
+                <tr>
+                    <td>978-99-9849-703-8</td><td>La tienda</td><td>King</td><td class="rojo">7.00</td>
+                </tr>
+            </table>
+        </div>
+        <h3>6. Mostrar, UTILIZANDO &Uacute;NICAMENTE PLANTILLAS, el t&iacute;tulo y autor de los
+                    libros. Los t&iacute;tulos llevan como color de fondo #ABC, los autores #CBA, excepto
+                    &ldquo;King&rdquo;, que lleva #456 y color de texto blanco</h3>
+        <div class="border-caja">
+            <table>
+                <tr>
+                    <th>T&iacute;tulo</th><th>Autor</th>
+                </tr>
+                <tr>
+                    <td class="titulo">Physics-based animation</td><td class="autor">Kenny Erleben</td>
+                </tr>
+                <tr>
+                    <td class="titulo">Principios de seguridad informatica para usuarios</td><td class="autor">Carlos Garre</td>
+                </tr>
+                <tr>
+                    <td class="titulo">Ejercicios complementarios de logica digital</td><td class="autor">Alberto Sanchez </td>
+                </tr>
+                <tr>
+                    <td class="titulo">It</td><td class="autor-king">King</td>
+                </tr>
+                <tr>
+                    <td class="titulo">La tienda</td><td class="autor-king">King</td>
+                </tr>
+                <tr>
+                    <td class="titulo">Ejercicios de LMSGI</td><td class="autor">Enrique Mu&ntilde;oz</td>
+                </tr>
+                <tr>
+                    <td class="titulo">&iexcl;Indignaos!</td><td class="autor">Stephane Hessel</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

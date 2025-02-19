@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<libreria>
+    <libro>
+        <titulo>Physics-based animation</titulo>
+        <autor>Kenny Erleben</autor>
+        <editor>Charles River Media</editor>
+        <isbn>978-15-8450-380-4</isbn>
+        <precio>50.06</precio>
+        <numpaginas>250</numpaginas>
+    </libro>
+    <libro>
+        <titulo>Principios de seguridad informatica para usuarios</titulo>
+        <autor>Carlos Garre</autor>
+        <editor>Dykinson </editor>
+        <isbn>978-84-9849-998-8</isbn>
+        <precio>12.50</precio>
+        <numpaginas>350</numpaginas>
+    </libro>
+    <libro>
+        <titulo>Ejercicios complementarios de logica digital</titulo>
+        <autor>Alberto Sanchez </autor>
+        <editor>Dykinson</editor>
+        <isbn>978-84-9849-703-8</isbn>
+        <precio>12.00</precio>
+        <numpaginas>200</numpaginas>
+    </libro>
+    <libro>
+        <titulo>It</titulo>
+        <autor>King</autor>
+        <editor>Viking</editor>
+        <isbn>978-99-9849-703-8</isbn>
+        <precio>10.50</precio>
+        <numpaginas>1200</numpaginas>
+    </libro>
+    <libro>
+        <titulo>La tienda</titulo>
+        <autor>King</autor>
+        <editor>Viking</editor>
+        <isbn>978-99-9849-703-8</isbn>
+        <precio>7.00</precio>
+        <numpaginas>800</numpaginas>
+    </libro>
+    <libro>
+        <titulo>Ejercicios de LMSGI</titulo>
+        <autor>Enrique Muñoz</autor>
+        <editor>DML</editor>
+        <isbn>998-84-9849-783-8</isbn>
+        <precio>6.00</precio>
+        <numpaginas>100</numpaginas>
+    </libro>
+    <libro>
+        <titulo>¡Indignaos!</titulo>
+        <autor>Stephane Hessel</autor>
+        <editor>Alianza</editor>
+        <isbn>978-84-9999-703-8</isbn>
+        <precio>5.00</precio>
+        <numpaginas>30</numpaginas>
+    </libro>
+</libreria>
